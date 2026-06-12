@@ -18,11 +18,10 @@ spec:
           image: quay.io/keycloak/keycloak:25.0.6
           args:
             - start-dev
-            - --hostname=http://81.26.186.227:30584
-            - --hostname-admin=http://81.26.186.227:30584
+            - --hostname=http://localhost:8080
+            - --hostname-admin=http://localhost:8080
             - --hostname-strict=false
             - --http-enabled=true
-            - --hostname-debug=true
           env:
             - name: KEYCLOAK_ADMIN
               value: admin
