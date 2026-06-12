@@ -23,6 +23,16 @@ spec:
               value: admin
             - name: KEYCLOAK_ADMIN_PASSWORD
               value: admin12345
+            - name: KC_HTTP_ENABLED
+              value: "true"
+            - name: KC_HOSTNAME
+              value: "81.26.186.227"
+            - name: KC_HOSTNAME_PORT
+              value: "30584"
+            - name: KC_HOSTNAME_STRICT
+              value: "false"
+            - name: KC_PROXY_HEADERS
+              value: "xforwarded"
           ports:
             - name: http
               containerPort: 8080
@@ -40,3 +50,4 @@ spec:
     - name: http
       port: 80
       targetPort: 8080
+      nodePort: 30584
