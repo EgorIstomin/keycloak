@@ -19,8 +19,10 @@ spec:
           args:
             - start-dev
             - --hostname=http://81.26.186.227:30584
+            - --hostname-admin=http://81.26.186.227:30584
             - --hostname-strict=false
             - --http-enabled=true
+            - --hostname-debug=true
           env:
             - name: KEYCLOAK_ADMIN
               value: admin
